@@ -86,6 +86,11 @@ module.exports.forgetpassword = async (req,res) => {
   // req = await json(req)
   // send(res,"200",req)
   console.log("forgetpassword async method called");
+   req = await json(req)
+  // console.log(req.email);
+  var emailn=req.email;
+  console.log(emailn);
+  send(res,"200",emailn);  
   var findByEmail = function(){
     User.find({ email: email }).exec().then((users, err) => {
 
