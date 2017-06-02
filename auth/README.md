@@ -17,3 +17,6 @@ MONGODB=<url> SECRET=<secret> npm start
 
 * navigate to `localhost:3000/api/setup`
 * user `admin:password` is created
+AUTH: auth folder for authentication microjs RUN: MONGODB=mongodb://localhost:27017 SECRET=abcdefgabcdefg npm start
+
+SERVICE: user foler for service example RUN: npm start
